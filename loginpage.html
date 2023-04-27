@@ -1,0 +1,96 @@
+<html>
+<head>
+<style>
+#main_div
+{
+background:#d6d2d6;
+width:1500px;
+height:1000px;
+position:relative;
+}
+#second_div
+{
+background:white;
+width: 809px;
+position:absolue;
+display:block_inline;
+height:900px;
+margin-left:auto;
+margin-right:auto;
+}
+#logo_div
+{
+	display:inline-block;
+    width: 100px;
+    background-color: white;
+}
+</style>
+</head>
+<body>
+<div id="main_div">
+<div id="second_div">
+<div id="logo_div">
+   <img src="image\Imageheader.jpg" style="width: auto;height: 100px;display: inline-block;border-radius: 10px;">
+</div>
+<div style="position: relative;top: -12px;background-color:#a43f06;width: 100px;height: 10px;margin-left:auto;
+margin-right:auto;width: 809px;height: 20px;">
+
+<p style="text-align: center;color: white;">WEB KIOSK (INTERNET) for Parents/Students</p>
+
+</div>
+<div style="background-color:rgb(255, 180, 41);width: 809px;height: 350px;position: relative;top:-14px">
+
+<div style="background-color:white;width: 709px;height: 300px;position: relative;top:44px;margin-left: auto;margin-right: auto;border-radius: 50px;">
+    <div style="background-color:white;width: 700px;position: relative;left:3px;top:35px;margin-left: auto;margin-right: auto;display: inline-block;">
+    <img src="image\image.jpg" style="width: 345px;height: 200px;display: inline-block;">
+    <div style="left:20px;width: 300px;height:100px;background-color:white;position: relative;margin-left: auto;margin-right: auto;top: -85px;display: inline-block;">
+
+      <table  cellpadding=0 cellspacing=0 style="width: 12px; height: 86px;position: relative;" >
+        <form method=post action="dashboard1.html" name="LoginForm" style="position: relative;">   
+	
+		<INPUT id=txtUType style="BORDER-BOTTOM: medium none; BORDER-LEFT-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; FONT-FAMILY: sans-serif; FONT-SIZE: x-small; FONT-STYLE: normal; HEIGHT: 19px; TEXT-ALIGN: right; VERTICAL-ALIGN: middle; WIDTH: 99px"
+            size=12 value="Member Type" name=txtuType readOnly tabIndex=100 height="22" width="99" align=right>&nbsp;
+          <select size="1" name="UserType" tabindex="1" language="Javascript" onchange="UserType_onchange()" style="VERTICAL-ALIGN: middle; WIDTH: 99px">
+          <OPTION Value="S" selected>Students</OPTION>
+           <OPTION Value="P" >Parents</OPTION>
+
+          </select>
+		<FONT color=red><sub>*</sub></FONT><br>
+		<INPUT Readonly name=txtCode value="Enrollment No" style ="BORDER-BOTTOM: medium none; BORDER-LEFT-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; FONT-FAMILY: sans-serif; FONT-SIZE: x-small; FONT-STYLE: normal; HEIGHT: 22px; TEXT-ALIGN: right;
+      VERTICAL-ALIGN: middle; WIDTH: 99px" size=12 lowsrc="" tabIndex=101 width="99" >&nbsp;
+	<input name="MemberCode" size="11" tabindex="2" LANGUAGE=javascript onchange="MemberCode_onchange();" style="VERTICAL-ALIGN: middle; WIDTH: 99px"> <FONT color=red><sub>*</sub></FONT>
+    <br><INPUT id=txtPIN style="BORDER-BOTTOM: medium none; BORDER-LEFT-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; FONT-FAMILY: sans-serif; FONT-SIZE: x-small; FONT-STYLE: normal; HEIGHT: 19px; TEXT-ALIGN: right; VERTICAL-ALIGN: middle; WIDTH: 85px" size =17 name =txtPin readOnly value="Password/Pin" tabIndex=103 width="101">
+        &nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="Password" size="10" tabindex="3" style="HEIGHT: 22px; VERTICAL-ALIGN: middle; WIDTH: 99px">&nbsp;<font color="red"><sub>*</sub></font>
+      <br>
+      <INPUT id=BTNSubmit style="FONT-FAMILY: Arial; FONT-SIZE: x-small; HEIGHT: 25px; VERTICAL-ALIGN:    top; WIDTH: 95px" tabIndex=4 type=submit size=30 value=Submit name=BTNSubmit height="25">
+
+      <INPUT id=BTNReset style="FONT-FAMILY: Arial; FONT-SIZE: x-small; HEIGHT: 25px; VERTICAL-ALIGN:    top; WIDTH: 94px" tabIndex=5 type=reset size=30 value=Reset name=BTNReset height="25">
+		    </td>
+			</tr>
+			</form>
+
+      </table>
+
+
+    </div>
+</div>
+</div>
+
+<div style="background-color:white;width: 809px;left:3px;height: 100px;position: relative;top:55px;margin-left: auto;margin-right: auto;display: inline;">
+
+    <font color='red'>Disclaimer :</font>
+    <font color='black'>
+    Thapar Institute of ENgineering and Technology is not responsible for any inadvertent error that may have crept in the results being published on WEB KIOSK. The results published on net are for immediate information to the examinees. These cannot be treated as final result. Original Grade Cards have been issued by the Institute separately under the signature of Registrar and are authentic proof of academic performance.
+    </font>
+</div>
+<div style="background-color:white;width: 809px;left:3px;height: 100px;position: relative;top:58px;margin-left: auto;margin-right: auto;display: inline;">
+
+    <img src="image\logo2.jpg" style="width: 805px;height: 50px;display: inline-block;border-radius: 10px;">    
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
