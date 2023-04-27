@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Details</title>
+	<style>
+		body {
+			background-color: orange;
+			color: black;
+		}
+		form {
+			width: 50%;
+			margin: 0 auto;
+		}
+		label {
+			display: block;
+			margin-top: 10px;
+		}
+		input[type="text"] {
+			width: 100%;
+			padding: 5px;
+			border: 1px solid black;
+			border-radius: 5px;
+		}
+		button {
+			background-color: black;
+			color: white;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			margin-top: 10px;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: white;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<h1>Student Details</h1>
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" placeholder="Enter your name" required>
+		
+		<label for="email">Email:</label>
+		<input type="text" id="email" name="email" placeholder="Enter your email" required>
+		
+		<label for="phone">Phone:</label>
+		<input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+		<button type="submit" onclick="saveChanges()">Save Changes</button>
+		<button type="button" onclick="goBack()">Go Back</button>
+	</form>
+	
+	<div id="details"></div>
+	
+	<script>
+		function saveChanges() {
+			var name = document.getElementById("name").value;
+			var email = document.getElementById("email").value;
+			var phone = document.getElementById("phone").value;
+			var details = "Name: " + name + "<br>Email: " + email + "<br>Phone: " + phone;
+			document.getElementById("details").innerHTML = details;
+			alert("Changes saved successfully!");
+		}
+		
+		function goBack() {
+			window.history.back();
+		}
+	</script>
+</body>
+</html>

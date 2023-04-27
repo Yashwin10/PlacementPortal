@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<style>
+		body {
+			background-color: orange;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			color: black;
+		}
+
+		.sidebar {
+			background-color: lightyellow;
+			padding: 20px;
+			width: 200px;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+
+		.sidebar a {
+			display: block;
+			padding: 10px;
+			margin-bottom: 10px;
+			color: black;
+			text-decoration: none;
+		}
+
+		.sidebar a:hover {
+			background-color: yellow;
+			color: white;
+		}
+
+		.main-content {
+			margin-left: 220px;
+			padding: 20px;
+		}
+
+		.italic {
+			font-style: italic;
+		}
+
+		.header {
+			text-align: right;
+			background-color: white;
+			padding: 10px;
+			color: red;
+			font-weight: bold;
+		}
+
+		.student-info {
+			text-align: right;
+			color: red;
+			margin-top: 20px;
+			font-size: 18px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		Thapar University
+	</div>
+	<div class="student-info">
+		<span>Roll Number: 123456</span><br>
+		<span>Name: John Doe</span>
+	</div>
+	<div class="sidebar">
+		<a href="pd.html">Personal Details</a>
+		<a href="bade.html">Bank Details</a>
+		<a href="resumenonpdf.html">Resume</a>
+		<a href="companies.html">Apply to Companies</a>
+		<a href="logout copy.html">Sign Out</a>
+	</div>
+	<div class="main-content">
+		<h1>Welcome to Your Dashboard</h1>
+		<p>Click on the options on the left to view or update your information.</p>
+		<p class="italic">Click to continue...</p>
+	</div>
+</body>
+</html>
+

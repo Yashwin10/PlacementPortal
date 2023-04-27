@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bank Details Form</title>
+	<style>
+		body {
+			background-color: orange;
+			color: black;
+		}
+		#display {
+			margin-top: 20px;
+		}
+		#go-back {
+			position: fixed;
+			bottom: 10px;
+			right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Bank Details Form</h1>
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br><br>
+
+		<label for="account">Account Number:</label>
+		<input type="text" id="account" name="account"><br><br>
+
+		<label for="routing">Routing Number:</label>
+		<input type="text" id="routing" name="routing"><br><br>
+
+		<label for="bank">Bank Name:</label>
+		<input type="text" id="bank" name="bank"><br><br>
+
+		<input type="button" value="Save Changes" onclick="saveChanges()">
+	</form>
+
+	<div id="display"></div>
+
+	<button id="go-back" onclick="goBack()">Go Back</button>
+
+	<script>
+		function saveChanges() {
+			var name = document.getElementById("name").value;
+			var account = document.getElementById("account").value;
+			var routing = document.getElementById("routing").value;
+			var bank = document.getElementById("bank").value;
+
+			var display = document.getElementById("display");
+			display.innerHTML = "<p><b>Name:</b> " + name + "</p>" + "<p><b>Account Number:</b> " + account + "</p>" + "<p><b>Routing Number:</b> " + routing + "</p>" + "<p><b>Bank Name:</b> " + bank + "</p>";
+		}
+
+		function goBack() {
+			window.history.back();
+		}
+	</script>
+</body>
+</html>
